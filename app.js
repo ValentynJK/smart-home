@@ -1,7 +1,7 @@
 import express from 'express';
 // import fetch from 'node-fetch'; // for API calls (check afterwards)
 // simulation device activity
-import { smartBulb, smartOutlet, smartTemperatureSensor } from './devices.js'
+import { smartBulb, smartOutlet, smartTemperatureSensor } from './helpers/devices.js'
 
 const app = express(); // creates Express.js app
 
