@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/reset.css">
+    <link rel="stylesheet" href="/styles/styles.css">
+    <link rel="stylesheet" href="styles/styles_circle.css">
+    <link rel="stylesheet" href="styles/dashboard_table.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="icon" href="medias/smart_home_icon_.png"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;700;800&family=Satisfy&display=swap" rel="stylesheet">
+    <title>Smart Home</title>
+</head>
+<body>
+    <nav>
+        <div id="logo">
+            <!-- <img src="medias/pictures/logo_4.png" alt="Smart house logo"> -->
+            <h1>Smart Solutions</h1>
+        </div>
+        <button id="open_button"><i class="material-icons">menu</i></button>
+        <div id="navigation">
+            <button id='close_button'><i class="material-icons">close</i></button>
+        <ul>
+            <li><a href="">Main</a></li>
+            <li><a href="">Kitchen</a></li>
+            <li><a href="">Bedroom</a></li>
+            <li><a href="">Support</a></li>
+        </ul>
+        </div>
+    </nav>
+    <section id="banner">
+        <div class="fade">
+            <h1>Welcome Home</h1>
+            <h3>Living room</h3>
+           <i id='update' class="fa-solid fa-rotate"></i>
+        </div>
+    </section>
+    <main id="systems">
+
+        <i class="fas fa-arrow-left" id='prevButton'></i>
+        <i class="fas fa-arrow-right" id='nextButton'></i>
+        
+        
+        <section class="carousel_holder">
+
+            <div class="slide" id="id_10" title="bulbs">
+                <div class="deviceName slide_description">Celling light</div>
+                <i class="fa-regular fa-lightbulb bulbs"></i>
+                <div class="status slide_description"><p>Available</p></div>
+            </div>
+            <div class="slide" id="id_11" title="bulbs">
+                <div class="deviceName slide_description">Work zone light</div>
+                <i class="fa-regular fa-lightbulb bulbs" ></i>
+                <div class="status slide_description"><p>Available</p></div>
+            </div>
+            <div class="slide" id="id_12" title="bulbs">
+                <div class="deviceName slide_description">Reading zone light</div>
+                <i class="fa-regular fa-lightbulb bulbs" ></i>
+                <div class="status slide_description"><p>Available</p></div>
+            </div>
+            <div class="slide" id="id_20" title="outlets">
+                <div class="deviceName slide_description">Work zone outlet</div>
+                <i class="material-icons outlets">outlet</i>
+                <div class="status slide_description"><p>Available</p></div>
+            </div>
+            <div class="slide" id="id_21" title="outlets">
+                <div class="deviceName slide_description">Reading zone outlet</div>
+                <i class="material-icons outlets">outlet</i>
+                <div class="status slide_description"><p>Available</p></div>
+            </div>
+            <div class="slide" id="id_30" title="temperatureSensors">
+                <div class="deviceName slide_description">Room temperature</div>
+                <!-- <i class="fa-solid fa-temperature-half" ></i> -->
+                <i class="material-icons temperatureSensors">device_thermostat</i>
+                <div class="status slide_description"><p>Available</p></div>
+            </div>
+            <div class="slide" id="id_40" title="tvDevices">
+                <div class="deviceName slide_description">TV</div>
+                <i class="fa-solid fa-tv"></i>
+                <div class="status slide_description"><p>Not Available</p></div>
+            </div>
+            <div class="slide" id="id_50" title="recordingDevices">
+                <div class="deviceName slide_description">Video</div>
+                <i class="fa-solid fa-video"></i>
+                <div class="status slide_description"><p>Not Available</p></div>
+            </div>
+            <div class="slide" id="id_60" title="musicDevices">
+                <div class="deviceName slide_description">Music</div>
+                <i class="fa-solid fa-music"></i>
+                <div class="status slide_description"><p>Not Available</p></div>
+            </div>        
+        </main>
+            
+        </section>
+    <div class="section_name"><h1>Dashboard</h1></div>
+    <section id="dashboard">
+        
+        <div class="device bulbs" title="bulbs"  id="bulbs_10" >
+
+        </div>
+        <div class="device bulbs" title="bulbs" id="bulbs_11" >
+
+        </div>
+        <div class="device bulbs" title="bulbs" id="bulbs_12" >
+
+        </div>
+        <div class="device outlets" title="outlets" id="outlets_20" >
+
+        </div>
+        <div class="device outlets" title="outlets" id="outlets_21" >
+
+        </div>
+        <div class="device temperatureSensors" title="temperatureSensors"  id="temperatureSensors_30" >
+
+        </div>
+    </section>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="module" src="scripts/slider.js"></script>
+<script type="module" src="scripts/interaction.js"></script>
+<script type="text/javascript" src="scripts/requests.js"></script>
+<script type="text/javascript" src="scripts/helpers.js"></script>
+<script src="https://kit.fontawesome.com/0ad1f9b02b.js" crossorigin="anonymous"></script>
+</html>

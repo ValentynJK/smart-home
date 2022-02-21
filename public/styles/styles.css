@@ -1,0 +1,314 @@
+body {
+    display: flex;
+    flex-flow: column;
+    justify-content: start;
+    align-items: center;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    text-align: center;
+}
+
+nav  {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    text-align: center;
+    height: 6rem;
+}
+
+section h1 {
+    font-size: 2rem;
+}
+
+section p {
+    font-size: 1rem;
+}
+
+#logo {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    height: 75px;
+    width: 400px;
+    
+}
+
+#logo img {
+    width: 100px;
+    height: 100px;
+}
+
+#logo h1 {
+    font-size: 2rem;
+    font-family: 'Satisfy', cursive;
+}
+
+#navigation  {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    opacity: 0.9;
+    border-radius: 3px;
+    height: 14rem;
+    width: 10rem;
+    background-color:white;
+    z-index: 2;
+    position: absolute;
+    right: 15%;
+    top: 2rem;
+    padding: 3rem 1.5rem 0 2rem;
+}
+
+#navigation ul {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+    z-index: 2;
+}
+
+#close_button {
+    position: absolute;
+    z-index: 100;
+    top: 5px;
+    right: 5px;
+    background-color: transparent;
+    border: none;
+    color: #153843;
+}
+
+#open_button {
+    z-index: 100;
+    background-color: transparent;
+    border: none;
+    color: #153843;
+}
+
+
+#navigation ul li {
+    list-style-type: none;
+    height: 3rem;
+    
+}
+#navigation ul li a {
+    text-decoration: none;
+    color: #153843;
+    opacity: 0.9;
+    font-size: 1.25rem;
+}
+
+
+.close {
+    height: 10px;
+}
+
+.mobile ul li a {
+    text-decoration: none;
+    color: black;
+    opacity: 0.9;
+}
+
+#banner {
+    background-image: url("/medias/pictures/banner_1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    flex-flow: column nowrap;
+    gap: 2rem;
+    height: 300px;
+    border-radius: 5px;
+}
+
+#banner h1 {
+    font-family: 'Satisfy', cursive;
+    color: white;
+    font-size: 4rem;
+}
+
+#banner h3 {
+    font-family: 'Satisfy', cursive;
+    color: gold;
+    font-size: 2rem;
+}
+
+#banner i {
+    color: white;
+    font-size: 2rem;
+}
+
+.fade {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+
+#systems {
+    width: 70%;
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel_holder {
+    padding: 0 30px 0 30px;
+    justify-content: start;
+    height: 200px;
+}
+
+#prevButton {
+    position: absolute;
+    top: 40%;
+    z-index: 10;
+    left: 5px;
+    color: black;
+    opacity: 0.6;
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+#prevButton:hover {
+    opacity: 0.9;
+}
+
+#nextButton {
+    position: absolute;
+    top: 45%;
+    z-index: 10;
+    right: 5px;
+    color: black;
+    opacity: 0.6;
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+#nextButton:hover {
+    opacity: 0.9;
+}
+
+.slide {
+    height: 18vmin;
+    width: 18vmin;
+    gap: 10px;
+    margin: 0 0 0 5px;
+    display: flex;
+    flex-flow: column nowrap;
+    flex-shrink: 0;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    opacity: 0.3;
+    border-radius: 5px;
+}
+
+.slide:hover {
+    transition: all .2s ease-in-out;
+    transform: scale(1.1);
+    box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+}
+
+.slide:hover .slide_description {
+    display: block;
+}
+
+.slide_description {
+    display: none;
+}
+
+#id_10, #id_11, #id_12, #id_20, #id_21, #id_30 {
+    opacity: 1;
+}
+
+
+.slide i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+}
+
+.bulbs {
+    color: #153843;
+}
+
+.outlets {
+    color: gold;
+}
+
+.temperatureSensors {
+    color: red;
+}
+
+.section_name h1 {
+    font-family: 'Satisfy', cursive;
+    color: #153843;
+    font-size: 2.25rem;
+}
+
+#dashboard {
+    margin: 5px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: start;
+    align-items: flex-start;
+    background-color: whitesmoke;
+    min-height: 500px;
+}
+
+.section_name {
+    width: 100%;
+    text-align: center;
+}
+
+.device {
+    position: relative;
+    display: none;
+    width: 270px;
+    height: 300px;
+    margin: 1rem 0 0 1rem;
+    background-color: #153843;
+    color: white;
+    border-radius: 5px;
+    padding: 1.5rem 1rem 0 1rem;
+    touch-action: none;
+    user-select: none;
+    text-align: left;
+    /* box-sizing: border-box; */
+    flex-flow: column nowrap;
+    align-items: start;
+    justify-content: start;
+    gap: 0.25rem;
+}
+
+.device.bulbs {
+    background-color: #B0C4DE;
+}
+
+.device.outlets {
+    background-color: #8FBC8F;
+}
+
+.device.temperatureSensors {
+    background-color: #778899;
+}
+
+.device button {
+    position: absolute;
+    z-index: 100;
+    top: 5px;
+    right: 5px;
+    background-color: transparent;
+    border: none;
+    color: white;
+}

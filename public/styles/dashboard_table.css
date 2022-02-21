@@ -1,0 +1,46 @@
+table {
+    width: 100%;
+    font-size: 1rem;
+}
+
+thead {
+    vertical-align: center;
+}
+
+
+th {
+    height: 40px;
+    text-align: center;
+    vertical-align: center;
+    font-size: 1.25rem;
+}
+
+td {
+    vertical-align: center;
+}
+
+tr {
+    text-align: start;
+    vertical-align: center;
+}
+
+.second {
+    text-align: center;
+}
+
+.name {
+    text-align:center;
+    height: 40px;
+}
+
+.brightness, .color {
+    height: 60px;
+}
+
+.status {
+    height: 20px;
+}
+
+.firts {
+    font-size: 1.25rem;
+}
